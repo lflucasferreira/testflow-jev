@@ -1,0 +1,19 @@
+{
+  "name": "testflow-jev",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Teste Playwright cujo passou ou falhou é decidido pelos três tipos do Jev: Noul, Choice e Score.",
+  "scripts": {
+    "demo": "node demo/server.mjs",
+    "mock:jev": "node mock/jev-server.mjs",
+    "test": "playwright test",
+    "test:live": "node scripts/run-live.mjs",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.6.0",
+    "typescript": "^5.9.2"
+  }
+}

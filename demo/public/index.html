@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Testflow</p>
+      <h1 id="heading">Checkout</h1>
+      <p class="lede">Plano anual · R$ 86,00</p>
+      <form id="checkout" novalidate>
+        <label>
+          E-mail
+          <input id="email" name="email" type="text" autocomplete="email" />
+        </label>
+        <label>
+          Final do cartão
+          <input id="card" name="card" type="text" inputmode="numeric" maxlength="4" autocomplete="off" />
+        </label>
+        <button type="submit">Pagar</button>
+      </form>
+      <p id="status" data-testid="status" hidden></p>
+      <p id="receipt" data-testid="receipt" hidden></p>
+      <p id="alert" role="alert" hidden></p>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
